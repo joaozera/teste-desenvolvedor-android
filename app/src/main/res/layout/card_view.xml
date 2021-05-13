@@ -1,0 +1,49 @@
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cartao"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:elevation="15dp"
+        android:divider="@android:color/black"
+        android:dividerHeight="2.0px"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        card_view:cardElevation="10dp"
+        card_view:cardPreventCornerOverlap="true">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/nomeitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="texto"
+                android:textSize="16dp">
+            </TextView>
+        <ImageView
+            android:id="@+id/imagem"
+            android:layout_gravity="center"
+            android:layout_width="125dp"
+            android:layout_height="175dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/precoitem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="preco"
+            android:textSize="20dp">
+        </TextView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
